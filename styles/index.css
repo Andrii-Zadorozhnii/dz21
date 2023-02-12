@@ -1,3 +1,7 @@
+body {
+  background: black;
+}
+
 @keyframes front {
   0% {
     transform: rotateY(0deg);
@@ -23,6 +27,7 @@
 h3 {
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: red;
 }
 
 .card {
@@ -53,7 +58,12 @@ h3 {
   width: 90px;
   transform: rotateY(-180deg);
   width: 100%;
-  animation: back 5s;
+  animation: back 5s linear;
+}
+.card-side.back div svg {
+  height: 150px;
+  width: 90px;
+  border-radius: 4.8px;
 }
 .card-side.back div img {
   height: 150px;
@@ -65,7 +75,7 @@ h3 {
   height: 150px;
   width: 90px;
   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-  animation: front 5s;
+  animation: front 5s linear;
 }
 .card-side.front div img {
   height: 150px;
