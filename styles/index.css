@@ -43,7 +43,7 @@ h3 {
 .card-side {
   height: 35rem;
   border-radius: 4.8px;
-  transition: all 0.8s ease;
+  transition: all 1s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   position: absolute;
